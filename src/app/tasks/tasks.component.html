@@ -1,5 +1,5 @@
 @if(isAddingTask){
-  <app-new-task  (cancel)="onClickCancel()"/>
+  <app-new-task  (cancel)="onClickCancel()" (add)="onAddTask($event)"/>
 }
 
 <section id="tasks">
